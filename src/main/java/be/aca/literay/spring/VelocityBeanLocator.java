@@ -1,10 +1,9 @@
 package be.aca.literay.spring;
 
-import java.util.Map;
-
+import com.liferay.portal.kernel.bean.BeanLocatorException;
 import org.springframework.stereotype.Component;
 
-import com.liferay.portal.kernel.bean.BeanLocatorException;
+import java.util.Map;
 
 /**
  * Implementation of Liferay's bean locator that uses the BeanLocator of Literay Spring to retrieve beans. This bean
@@ -28,11 +27,11 @@ public class VelocityBeanLocator implements com.liferay.portal.kernel.bean.BeanL
 		return realName;
 	}
 
-	public ClassLoader getClassLoader() {
-		throw new UnsupportedOperationException();
+	public String[] getNames() {
+		return new String[0];
 	}
 
-	public String[] getNames() {
+	public ClassLoader getClassLoader() {
 		throw new UnsupportedOperationException();
 	}
 
