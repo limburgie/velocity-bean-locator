@@ -9,8 +9,8 @@ public class OtherSayHelloService {
 		return String.format("Hello other, %s!", name);
 	}
 
-	public OtherSayHelloService getService() {
-		return this;
+	public MyPojo getPojo() {
+		return new MyPojo();
 	}
 	
 }
